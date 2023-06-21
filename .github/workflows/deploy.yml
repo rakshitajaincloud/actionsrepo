@@ -3,18 +3,18 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main # or the branch you want to trigger the deployment on
+      - main
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: Linux
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v2
+      uses: actionsrepo
 
     - name: Build and Deploy
-      uses: JamesIves/github-pages-deploy-action@4.1.1
+      uses: actionsrepo
       with:
-        branch: gh-pages
-        folder: . # or specify the folder containing your static website files
+        branch: actionrepo
+
